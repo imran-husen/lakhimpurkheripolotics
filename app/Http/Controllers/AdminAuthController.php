@@ -15,7 +15,7 @@ use App\Models\Feedback; //Uploading the feedback
 use App\Models\JoinCampaign; //This is teh model to the join campeign
 use App\Models\NewsCutting; //This is the models of the upload news
 use App\Models\ImportantLink; //This is the nodels of the important link
-use App\MOdels\Contact; // Controller models
+use App\Models\Contact; // Controller models
 use App\Models\Donation; //This is the model of the donation
 
 
