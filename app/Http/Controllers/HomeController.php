@@ -25,7 +25,7 @@ class HomeController extends Controller
         $video = YoutubeVideo::latest()->get();
 
         // Send to home page
-        return view('welcome', compact('latestNotice', 'slider', 'latestEvents', 'feedback', 'attractions','video'));
+        return view('index', compact('latestNotice', 'slider', 'latestEvents', 'feedback', 'attractions','video'));
     }
 
     // This is the routing the the page of the join
