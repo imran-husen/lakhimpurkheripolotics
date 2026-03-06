@@ -1,0 +1,179 @@
+body{
+    font-family:"Roboto Condensed", sans-serif;
+    background: #f4f6f9,
+    }
+.sidebar a:hover,.sidebar a.active{
+     background:#1f2937;
+     color:#fff
+    }
+.content{
+    margin-left:240px;
+    padding:20px
+   }
+.card{
+    border:0;
+    border-radius:14px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06)
+}
+.badge-soft{
+    background:rgba(13,110,253,.1);
+    color:#0d6efd}
+
+
+/* SPA without JS using :target */
+section{display:none}
+section:target{display:block}
+section#dashboard{display:flex}
+     
+/* Sidebar css */
+.sidebar{
+    width: 260px;
+    background: linear-gradient(180deg, #02122c, #637185);
+}
+
+.sidebar a{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.sidebar a i{
+    font-size: 18px;
+}
+
+.sidebar a:hover,
+.sidebar a.active{
+    background: rgba(255,255,255,0.15);
+}
+
+@media (max-width: 768px){
+    .sidebar{
+        width: 220px;
+    }
+}
+
+
+/* Parent menu */
+.sidebar-link{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#fff;
+    padding:11px 14px;
+    border-radius:8px;
+    text-decoration:none;
+    margin-bottom:6px;
+    font-size:14px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.sidebar-link:hover{
+    background:rgba(255,255,255,0.18);
+}
+
+/* Icons */
+.sidebar-link i{
+    font-size:17px;
+}
+
+/* Arrow icon */
+.sidebar-link .arrow{
+    margin-left:auto;
+    font-size:14px;
+    transition:transform 0.3s ease;
+}
+
+/* Rotate arrow when open */
+.sidebar-link[aria-expanded="true"] .arrow{
+    transform:rotate(180deg);
+}
+
+/* Submenu */
+.submenu{
+    padding-left:32px;
+    margin-bottom:8px;
+}
+
+.submenu a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#e9f1ff;
+    padding:8px 12px;
+    margin-bottom:5px;
+    border-radius:6px;
+    font-size:13px;
+    text-decoration:none;
+    background:rgba(255,255,255,0.08);
+    transition:0.3s;
+}
+
+.submenu a i{
+    font-size:15px;
+}
+
+.submenu a:hover{
+    background:rgba(255,255,255,0.2);
+}
+
+/* This is the code of the famous person action bar */
+.famous_person_wrapper{
+            background-color: #f4f6f9;
+            padding: 40px 0;
+        }
+
+        .famous_person_form_section{
+            background:#fff;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .famous_person_header{
+            border-bottom:2px solid #0d6efd;
+            padding-bottom:10px;
+            margin-bottom:25px;
+        }
+
+        .famous_person_header h3{
+            font-weight:700;
+            color:#0d6efd;
+        }
+
+        .famous_person_btn{
+            padding:8px 30px;
+            font-weight:600;
+        }
+
+
+        /* This is the code of the attarction view parts  */
+         .attraction_form_wrapper{
+            background:#f4f6f9;
+            padding:40px 0;
+        }
+
+        .attraction_form_box{
+            background:#fff;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .attraction_form_header{
+            border-bottom:2px solid #198754;
+            padding-bottom:12px;
+            margin-bottom:25px;
+        }
+
+        .attraction_btn{
+            padding:8px 30px;
+            font-weight:600;
+        }

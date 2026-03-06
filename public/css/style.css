@@ -1,0 +1,891 @@
+/* This is the code of the comman part of the navbar and footer */
+        /* Navbar */
+        /* Cross icon style */
+        *{
+           font-family:'Poppins',sans-serif;
+         }
+        .close-icon {
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .custom-navbar {
+            background-color: #19056f;
+        }
+
+        .custom-navbar .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            padding: 10px 15px;
+        }
+
+        .custom-navbar .nav-link:hover,
+        .custom-navbar .dropdown-item:hover {
+            background-color: #001d8f;
+            color: #fff;
+        }
+
+        .dropdown-menu {
+            border-radius: 0;
+            border: none;
+        }
+
+        /* Mobile spacing */
+        @media (max-width: 576px) {
+            .top-heading h1 {
+                font-size: 22px;
+            }
+        }
+
+    .section-title{
+        font-weight:700;
+        color:#0d1b2a;
+    }
+
+    .read-btn{
+        background:#0d1b2a;
+        color:#fff;
+        border:none;
+        padding:8px 20px;
+        border-radius:30px;
+    }
+
+    .read-btn:hover{
+        background:#1b263b;
+    }
+    /* this is the code of the attraction view of the kheri */
+      .kheri_scroll::-webkit-scrollbar {
+    height: 6px;
+}
+.kheri_scroll::-webkit-scrollbar-thumb {
+    background: #198754;
+    border-radius: 10px;
+}
+
+.kheri_card {
+    min-width: 250px;
+    max-width: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.kheri_img {
+    height: 170px;
+    object-fit: cover;
+}
+
+.kheri_text {
+    min-height: 48px;
+    overflow: hidden;
+}
+
+/* code of the header buttons section */
+
+.join-btn{
+  font-size: 0.8rem;
+  padding: 10px 12px;
+  border-radius: 50px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.35s ease;
+  background: linear-gradient(135deg, #ffc107, #ff9800);
+  border: none;
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.35);
+}
+
+/* Hover animation */
+.join-btn:hover{
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 22px rgba(255, 152, 0, 0.5);
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+}
+
+/* Icon animation */
+.join-btn i{
+  transition: transform 0.3s ease;
+}
+
+.join-btn:hover i{
+  transform: translateX(6px) rotate(5deg);
+}
+
+/* Click ripple feel */
+.join-btn:active{
+  transform: scale(0.95);
+}
+
+/* Info Marquee Box */
+.info-bar {
+    background: linear-gradient(90deg, #b2fefa, #e0ffff);
+    border: 1px solid #000;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* Marquee animation */
+.marquee-text {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Toll Free Button */
+.toll-box {
+    background: linear-gradient(90deg, #1b5e20, #4caf50);
+    color: #fff;
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+    .marquee-text {
+        font-size: 15px;
+    }
+}
+
+/* This is teh code of the loading pop */
+.popup-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Box */
+.popup-box{
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 3px;
+    position: relative;
+}
+
+/* Image */
+.popup-image{
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* Close Button */
+.popup-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #06ea47;
+}
+.carousel-icon{
+    font-size: 25px;
+    color: #0d6efd; /* blue */
+    background: #fff;
+    border-radius: 0%;
+}
+
+/* This is css code of the circular list */
+.slider-wrapper{
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-track{
+    display: flex;
+    width: max-content;
+    animation: moveLeft 5s linear infinite;
+}
+
+.circle-card{
+    width: 200px;
+    height: 200px;
+    border:1px solid black;
+    margin-right: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.circle-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animation */
+@keyframes moveLeft{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+    .circle-card{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+.video-wrapper {
+  height: 520px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #f8f9fa;
+}
+
+.video-track {
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 20s linear infinite;
+}
+
+.video-card {
+ 
+  background: #fff;
+  border-radius: 12px;
+  padding: 6px;
+  margin-bottom: 14px;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  border: none;
+}
+
+@keyframes scrollUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+/* Hover Pause */
+.video-wrapper:hover .video-track {
+  animation-play-state: paused;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .video-wrapper {
+    height: 500px;
+    margin-top: 20px;
+  }
+
+  .video-card iframe {
+    height: 160px;
+  }
+}
+
+/* This is the code of the youtube video play console */
+
+.video-section{
+    padding:60px 0;
+    background:#f8f9fa;
+}
+
+/* Horizontal scroll for mobile */
+.video-scroll{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    padding-bottom:10px;
+}
+
+.video-scroll::-webkit-scrollbar{
+    height:6px;
+}
+
+.video-scroll::-webkit-scrollbar-thumb{
+    background:#ccc;
+    border-radius:10px;
+}
+
+/* Card Design */
+.video-card{
+    min-width:320px;
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    background:#fff;
+    transition:0.3s;
+}
+
+.video-card:hover{
+    transform:translateY(-5px);
+}
+
+.video-card iframe{
+    width:100%;
+    height:200px;
+}
+
+@media(min-width:992px){
+
+.video-scroll{
+    overflow-x:visible;
+}
+
+.video-card{
+    min-width:0;
+    width:100%;
+}
+
+}
+
+
+
+/* This is the code of the history kheri  */
+.hero-section {
+            background: linear-gradient(135deg, #0d6efd, #0a58ca);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+        .section-title {
+            border-left: 5px solid #0d6efd;
+            padding-left: 12px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .highlight-box {
+            background: #e9f2ff;
+            border-left: 5px solid #0d6efd;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        /* This is the css of politics page */
+        .hero{
+        background: linear-gradient(135deg,#198754,#0d6efd);
+        color:white;
+        padding:80px 0;
+        text-align:center;
+    }
+    .section-title{
+        font-weight:700;
+        margin-bottom:20px;
+        color:#0d6efd;
+    }
+    .card{
+        border:none;
+        border-radius:15px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.08);
+        transition:0.3s;
+    }
+    .card:hover{
+        transform:translateY(-5px);
+    }
+
+    /* This is the code of the admistrative page of the blade file */
+     .hero-section{
+            background: linear-gradient(135deg,#ddd203,#9adf04);
+            color:white;
+            padding:60px 0;
+        }
+        .section-title{
+            border-left:5px solid #0d6efd;
+            padding-left:10px;
+            margin-bottom:20px;
+            font-weight:600;
+        }
+
+/* This is the css code of teh famous places of teh kheri */
+.hero{
+    background: linear-gradient(135deg,#198754,#0dcaf0);
+    color:white;
+    padding:70px 0;
+}
+.section-title{
+    border-left:5px solid #198754;
+    padding-left:10px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+/* This is the design of the fomous person */
+.famous_card {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+.famous_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.famous_img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f1f1f1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.famous_person_btn {
+    padding: 8px 25px;
+    border-radius: 30px;
+}
+
+/* This is the code of the about of organisation  */
+  .manage-hero {
+            background: linear-gradient(to right, #0d6efd, #6610f2);
+            color: #fff;
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        .manage-section-box {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 35px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+        }
+
+        .manage-section-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+        }
+
+        .manage-footer {
+            background: #0d6efd;
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .manage-title {
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .manage-hero {
+                padding: 60px 15px;
+            }
+            .manage-section-box {
+                padding: 25px;
+            }
+        }
+
+        /* This is the code of the About of BAP Points */
+
+.bap-hero{
+    background: linear-gradient(135deg,#0d6efd,#6610f2);
+    color:white;
+    padding:100px 20px;
+    text-align:center;
+}
+
+.bap-card{
+    border:none;
+    border-radius:15px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.bap-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+}
+
+.bap-section-title{
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+.bap-footer{
+    background:#0d6efd;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+@media(max-width:768px){
+    .bap-hero{
+        padding:70px 15px;
+    }
+}
+
+/* This is the code for the agenda of Bhu Ayami party */
+
+.bap-hero{
+    background: linear-gradient(135deg,#198754,#0d6efd);
+    color:white;
+    padding:110px 20px;
+    text-align:center;
+}
+
+.bap-hero h1{
+    font-weight:700;
+}
+
+.bap-card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+}
+
+.bap-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.bap-section-title{
+    font-weight:700;
+    margin-bottom:40px;
+}
+
+.bap-footer{
+    background:#198754;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+@media(max-width:768px){
+    .bap-hero{
+        padding:70px 15px;
+    }
+}
+
+/* This is the code of the demand page of BAP */
+
+.dhaurahra-hero{
+    background: linear-gradient(135deg,#0d6efd,#198754);
+    color:white;
+    padding:100px 20px;
+    text-align:center;
+}
+
+.dhaurahra-card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.dhaurahra-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.dhaurahra-title{
+    font-weight:700;
+    margin-bottom:40px;
+}
+
+.dhaurahra-footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    .dhaurahra-hero{
+        padding:70px 15px;
+    }
+}
+
+        .demand-form-card{
+            border-radius: 18px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            animation: demandFadeSlide 1.2s ease-in-out;
+        }
+
+        .demand-heading{
+            animation: demandZoom 1s ease-in-out;
+        }
+
+        .demand-input{
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .demand-input:focus{
+            border-color: #0d6efd;
+            box-shadow: 0 0 8px rgba(13,110,253,0.3);
+            transform: scale(1.03);
+        }
+
+        .demand-btn{
+            background: linear-gradient(45deg, #0d6efd, #20c997);
+            border: none;
+            border-radius: 10px;
+            transition: 0.4s;
+        }
+
+        .demand-btn:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            opacity: 0.95;
+        }
+
+        @keyframes demandFadeSlide{
+            from{opacity:0; transform: translateY(40px);}
+            to{opacity:1; transform: translateY(0);}
+        }
+
+        @keyframes demandZoom{
+            from{opacity:0; transform: scale(0.8);}
+            to{opacity:1; transform: scale(1);}
+        }
+
+        /* This is the code of the polotical assebly seat in the lakhimpur */
+        .hero{
+    background:linear-gradient(135deg,#0d6efd,#0dcaf0);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.seat-card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+    height:100%;
+}
+
+.seat-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.seat-title{
+    color:#0d6efd;
+    font-weight:bold;
+}
+ /* This is teh css of teh MP seat */
+ .section-title{
+    text-align:center;
+    font-weight:700;
+    margin-bottom:40px;
+    color:#0d6efd;
+}
+
+.seat-card{
+    border:none;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.seat-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+.card-header{
+    border-radius:20px 20px 0 0 !important;
+    font-size:20px;
+    font-weight:600;
+}
+
+.list-group-item{
+    border:none;
+}
+
+.badge-custom{
+    background:#6610f2;
+    padding:8px 15px;
+    font-size:14px;
+}
+
+/* ------------------------This is the code of the main media page------------------------*/
+/* Css code of the galler of events */
+  /* Desktop par 5 cards ek row me */
+    .col-lg-custom {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    /* Mobile par 1 card */
+    @media (max-width: 991px) {
+        .col-lg-custom {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    /* Image size control */
+    .card-img-top {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    /* This is the code of the news page */
+    /* Section */
+/* Section */
+.news-section{
+    background:#f8f9fa;
+}
+
+/* Heading */
+.news-heading{
+    font-size:32px;
+}
+
+/* Column width fix for 5 cards */
+@media (min-width:992px){
+    .news-col{
+        flex:0 0 20%;
+        max-width:20%;
+    }
+}
+
+/* Card */
+.news-card{
+    border-radius:10px;
+    overflow:hidden;
+    transition:all 0.3s ease;
+    background:#fff;
+    height:100%;
+}
+
+/* Hover Effect */
+.news-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.news-image{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+/* Card Body */
+.news-card-body{
+    padding:18px;
+}
+
+/* Title */
+.news-title{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+/* Description */
+.news-text{
+    font-size:14px;
+    color:#666;
+    margin-bottom:10px;
+}
+
+/* Date */
+.news-date{
+    font-size:13px;
+    color:#dc3545;
+    font-weight:500;
+}
+
+/* THis is the code for the contactus page */
+
+.contact-section{
+    background:#f8f9fa;
+    padding:70px 0;
+}
+
+.contact-card{
+    background:#ffffff;
+    border-radius:12px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-title{
+    font-weight:600;
+    color:#0d6efd;
+}
+
+.contact-btn{
+    padding:10px 30px;
+    font-weight:500;
+}
+
+/* This is code for the donate buttons */
+.donate-btn{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+}
+
+/* Code for the donation form */
+
+.donation-card{
+max-width:700px;
+margin:auto;
+border-radius:15px;
+}
+
+.form-title{
+font-weight:700;
+color:#0d6efd;
+}
+
+.qr-box{
+display:none;
+text-align:center;
+margin-bottom:20px;
+}
+
+.qr-box img{
+max-width:220px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.payment-btn{
+border-radius:30px;
+font-weight:500;
+}
+
+.submit-btn{
+border-radius:30px;
+font-weight:600;
+font-size:18px;
+}
