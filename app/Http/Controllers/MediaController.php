@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\LatestEvent; //This is models of the latest events 
 use App\Models\YoutubeVideo; // This is uploding videos
 use App\Models\NewsCutting; //This is the models of the upload news
-use App\MOdels\ImportantLink; //This is the nodels of the important link
+use App\Models\ImportantLink; //This is the nodels of the important link
 
 class MediaController extends Controller
 {
