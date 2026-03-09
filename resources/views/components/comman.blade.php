@@ -272,32 +272,46 @@
  {{$bodycode}}
 
 <!-- ================= Footer ================= -->
-<footer class="org-footer mt-2">
+<footer class="org-footer mt-2 bg-white border-top">
     <div class="container py-4">
-        <div class="row align-items-center">
+        <div class="row align-items-start">
 
-            <!-- Left Content -->
-            <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
-                <h6 class="fw-bold mb-1">लखीमपुर खीरी की राजनीति (अवध क्षेत्र)</h6>
-                <p class="mb-0 small">
+            <!-- संगठन जानकारी -->
+            <div class="col-md-4 mb-3">
+                <h6 class="fw-bold">लखीमपुर खीरी की राजनीति (अवध क्षेत्र)</h6>
+                <p class="small mb-0 text-muted">
                     बहुआयामियों के बहुआयामी विचार जन-जन तक
                 </p>
             </div>
 
-            <!-- Social Media Icons -->
-            <div class="col-md-4 text-center text-md-end">
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <!-- कार्यालय का पता -->
+            <div class="col-md-4 mb-3">
+                <h6 class="fw-bold text-danger">पार्टी कार्यालय</h6>
+                <p class="small text-muted mb-0">
+                    <strong>बहुआयामी पार्टी (BAP)</strong><br>
+                    कस्ता कॉलोनी, मैगलगंज मार्ग<br>
+                    एच. पी. मौर्य पेट्रोल पंप के पास<br>
+                    विधानसभा क्षेत्र – कस्ता, सीट संख्या 143<br>
+                    ब्लॉक – मितौली, पिन कोड – 261501<br>
+                    जनपद – लखीमपुर खीरी, उत्तर प्रदेश (262701)
+                </p>
+            </div>
+
+            <!-- सोशल मीडिया -->
+            <div class="col-md-4 text-md-end text-center">
+                <h6 class="fw-bold">हमसे जुड़ें</h6>
+                <a href="#" class="social-icon me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon me-2"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
             </div>
 
         </div>
 
-        <hr class="my-3">
+        <hr>
 
-        <!-- Bottom Line -->
-        <div class="text-center small">
+        <!-- नीचे की लाइन -->
+        <div class="text-center small text-muted">
             © 2025 बहुआयामी पार्टी | सभी अधिकार सुरक्षित
         </div>
     </div>

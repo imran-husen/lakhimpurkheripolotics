@@ -25,11 +25,11 @@
 
               <!-- Call Link -->
               <a href="tel:05222731211" class="text-decoration-none text-white fw-bold">
-                  ☎ Toll-Free 0522-2731211
+                  ☎ Toll-Free +91-9918422098
               </a>
 
               <!-- WhatsApp Link -->
-              <a href="https://wa.me/919999999999" target="_blank" class="text-white fs-5">
+              <a href="https://wa.me/919918422098" target="_blank" class="text-white fs-5">
                   <i class="bi bi-whatsapp"></i>
               </a>
 
@@ -72,7 +72,7 @@
 
                 <!-- IMAGE -->
                 <div class="popup-image" style="background-image:url('Static_image/Pop Image.jpeg')">
-                    <a href="#" 
+                    <a href="https://www.bahuayamiparty.in/onlinemember.aspx" 
                       class="btn btn-primary btn-sm m-2 shadow-sm fw-semibold
                               d-inline-flex align-items-center gap-2
                               rounded-pill">
@@ -110,42 +110,42 @@
 
       <!-- Button 1 -->
       <div class="col-6 col-md-2">
-        <a href="#join" class="btn btn-warning btn-sm w-100">
+        <a href="{{ route('about.history') }}" class="btn btn-warning btn-sm w-100">
           About <i class="bi bi-info-circle-fill ms-1"></i>
         </a>
       </div>
 
       <!-- Button 2 -->
       <div class="col-6 col-md-2">
-        <a href="#mission" class="btn btn-warning btn-sm w-100">
+        <a href="{{ route('mangement.org') }}" class="btn btn-warning btn-sm w-100">
           Management <i class="bi bi-diagram-3-fill ms-1"></i>
         </a>
       </div>
 
       <!-- Button 3 -->
       <div class="col-6 col-md-2">
-        <a href="#events" class="btn btn-warning btn-sm w-100">
+        <a href="{{ route('politics.assembly') }}" class="btn btn-warning btn-sm w-100">
           Politics <i class="bi bi-megaphone-fill ms-1"></i>
         </a>
       </div>
 
       <!-- Button 4 -->
       <div class="col-6 col-md-2">
-        <a href="#gallery" class="btn btn-warning btn-sm w-100">
+        <a href="{{ route('media.news') }}" class="btn btn-warning btn-sm w-100">
           Gallery <i class="bi bi-image-fill ms-1"></i>
         </a>
       </div>
 
       <!-- Button 5 -->
       <div class="col-6 col-md-2">
-        <a href="#volunteer" class="btn btn-warning btn-sm w-100">
+        <a href="{{ route('contact') }}" class="btn btn-warning btn-sm w-100">
           Contact <i class="bi bi-envelope-fill ms-1"></i>
         </a>
       </div>
 
       <!-- Button 6 -->
       <div class="col-6 col-md-2">
-        <a href="#contact" class="btn btn-warning btn-sm w-100">
+        <a href="{{ route('amish') }}" class="btn btn-warning btn-sm w-100">
           K.M. Amish <i class="bi bi-person-badge-fill ms-1"></i>
         </a>
       </div>
